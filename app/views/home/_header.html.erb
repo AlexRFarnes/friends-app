@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md fs-5" style="background-color: #F2490C;">
+  <div class="container-fluid">
+  <%= link_to "Friends App", root_path, class:"navbar-brand fs-3" %>
+    <!-- <a class="navbar-brand fs-3" href="#">Friends App</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <%= link_to "About us", home_about_path, class:"nav-link active"  %>
+       <!-- <a class="nav-link active" aria-current="page" href="#">About</a> -->
+       <%= link_to "Friends", friends_path, class:"nav-link active"  %>
+      </div>
+    </div>
+  </div>
+</nav>
