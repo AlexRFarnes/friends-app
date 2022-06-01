@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
+<h1 class="mb-5">Friend List</h1>
 
-<h1>Friend List</h1>
-
-<table class="table table-striped table-hover">
+<table class="table table-hover" style="background: #A767F5; color: #fff">
   <thead class="table-primary" >
     <tr>
       <th>First name</th>
@@ -22,9 +20,9 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
-        <td><%= link_to 'Show', friend %></td>
-        <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
-        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', friend, class:"link", style:"color: #f5f258;" %></td>
+        <td><%= link_to 'Edit', edit_friend_path(friend), class:"link", style:"color: #f5f258;" %></td>
+        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"link", style:"color: #f5f258;" %></td>
       </tr>
     <% end %>
   </tbody>
