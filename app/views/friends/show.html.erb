@@ -1,4 +1,4 @@
-<div class="card mx-auto p-3 mt-5" style="width: 18rem; background: #95F5E6">
+<div class="card mx-auto p-3 mt-5" style="width: 18rem; background: #A767F5; color: #fff;">
   <div class="card-body mb-3">
     <h4 class="card-title fs-3">
     <%= @friend.first_name %>
@@ -7,23 +7,23 @@
   </div>
 
   <ul class="list-group list-group-flush mb-3">
-    <li class="list-group-item py-3" style="background:#95F5E6;">
+    <li class="list-group-item py-3" style="background:#A767F5; color: #fff;">
         <strong>Email:</strong>
         <%= @friend.email %>
     </li>
-    <li class="list-group-item py-3" style="background:#95F5E6;">
+    <li class="list-group-item py-3" style="background:#A767F5; color: #fff;">
       <strong>Phone:</strong>
       <%= @friend.phone %>
     </li>
-    <li class="list-group-item py-3" style="background:#95F5E6;">
+    <li class="list-group-item py-3" style="background:#A767F5; color: #fff;">
       <strong>Twitter:</strong>
       <%= @friend.twitter %>
     </li>
 
   </ul>
   <div class="card-body mb-3">
-    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn card-link py-2 px-4",style:"background: #F58558; color: #333" %>
-    <%= link_to 'Back', friends_path, class:"btn card-link py-2 px-4",style:"background: #A767F5; color: #fff" %>
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn card-link py-2 px-4",style:"background: #2FF5D7; color: #333" %>
+    <%= link_to 'Back', friends_path, class:"btn card-link py-2 px-4",style:"background: #95F5E6;" %>
   </div>
 </div>
 
