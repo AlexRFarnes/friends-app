@@ -36,6 +36,8 @@
     <%= form.text_field :twitter, class:"form-control" %>
   </div>
 
+  <%= form.number_field :user_id, id: :friend_user_id, value:current_user.id, type: :hidden, class:"form-control" %>
+
   <div class="actions mb-3">
     <%= form.submit class:"btn", style:"background: #A767F5; color: #fff;" %>
   </div>
