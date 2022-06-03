@@ -1,4 +1,4 @@
-<div class="card mx-auto p-3 mt-5" style="width: 18rem; background: #A767F5; color: #fff;">
+<div class="card mx-auto p-3 mt-5" style="width: 25rem; background: #BBBDF2; color: #590219;">
   <div class="card-body mb-3">
     <h4 class="card-title fs-3">
     <%= @friend.first_name %>
@@ -7,23 +7,25 @@
   </div>
 
   <ul class="list-group list-group-flush mb-3">
-    <li class="list-group-item py-3" style="background:#A767F5; color: #fff;">
+    <li class="list-group-item py-3" style="background:#BBBDF2; color: #590219;">
         <strong>Email:</strong>
         <%= @friend.email %>
     </li>
-    <li class="list-group-item py-3" style="background:#A767F5; color: #fff;">
+    <li class="list-group-item py-3" style="background:#BBBDF2; color: #590219;">
       <strong>Phone:</strong>
       <%= @friend.phone %>
     </li>
-    <li class="list-group-item py-3" style="background:#A767F5; color: #fff;">
+    <li class="list-group-item py-3" style="background:#BBBDF2; color: #590219;">
       <strong>Twitter:</strong>
       <%= @friend.twitter %>
     </li>
 
   </ul>
-  <div class="card-body mb-3">
+  <div class="card-body mb-3 d-flex justify-content-between">
     <%= link_to 'Edit', edit_friend_path(@friend), class:"btn card-link py-2 px-4",style:"background: #2FF5D7;" %>
-    <%= link_to 'Back', friends_path, class:"btn card-link py-2 px-4",style:"background: #95F5E6;" %>
+    
+    <%= link_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"link btn py-2 px-4", style:"background: #F25E5E; color: #fff;" %>
+    <%= link_to 'Back', friends_path, class:"btn card-link py-2 px-4",style:"background: #EFF285;" %>
   </div>
 </div>
 

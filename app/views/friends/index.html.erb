@@ -1,28 +1,29 @@
 <h1 class="mb-5">Friend List</h1>
 
+
 <table class="table table-hover" style="background: #A767F5; color: #fff">
   <thead class="table-primary" >
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Name</th>
       <th>Email</th>
       <th>Phone</th>
       <th>Twitter</th>
-      <th colspan="3"></th>
+      <th colspan="1"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @friends.each do |friend| %>
       <tr>
-        <td><%= friend.first_name %></td>
-        <td><%= friend.last_name %></td>
+        <td>
+          <%= link_to "#{friend.first_name} #{friend.last_name}", friend, class:"link", style:"color: #5BF5DD;" %>
+        </td>
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
-        <td><%= link_to 'Show', friend, class:"link", style:"color: #f5f258;" %></td>
-        <td><%= link_to 'Edit', edit_friend_path(friend), class:"link", style:"color: #f5f258;" %></td>
-        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"link", style:"color: #f5f258;" %></td>
+        
+        <%# <td><%= link_to 'Edit', edit_friend_path(friend), class:"link", style:"color: #f5f258;"</td> %>
+        <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"link btn btn-sm", style:"background: #F25E5E; color: #fff;" %></td>
       </tr>
     <% end %>
   </tbody>
