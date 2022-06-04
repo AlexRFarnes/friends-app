@@ -40,7 +40,7 @@ A CRUD app built with Rails, PostgreSQL for the database, and styled with Bootst
 
 ![Screenshot 2022-06-04 at 14-33-03 Friends App](https://user-images.githubusercontent.com/57517804/171987983-44177955-d5ed-4076-9a62-ab11be64ee97.png)
 ![Screenshot 2022-06-04 at 14-33-49 Friends App](https://user-images.githubusercontent.com/57517804/171987984-fe0b9497-0e35-43f5-a9fe-6af52366802a.png)
-![Screenshot 2022-06-04 at 14-33-59 Friends App](https://user-images.githubusercontent.com/57517804/171987985-5a54c39f-54ab-4852-805d-c5eba0a19c44.png)
+![Screenshot 2022-06-04 at 14-44-18 Friends App](https://user-images.githubusercontent.com/57517804/171988033-d502dcf6-3441-4502-9a3f-17467f1eb72a.png)
 [Demo](https://alexrailsfriendsapp.herokuapp.com/)
 
 ## Built with
