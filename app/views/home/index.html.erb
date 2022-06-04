@@ -1,4 +1,8 @@
 <h1 class="display-3">Welcome to the Friends App!</h1>
 <p class="lead">This app is for storing information about your friends.</p>
 
-<%= link_to "Sign Up Now", new_user_registration_path, class:"btn", style:"background: #A767F5; color: #fff;" %>
+<% if !user_signed_in? %>
+    <%= link_to "Sign Up Now", new_user_registration_path, class:"btn", style:"background: #A767F5; color: #fff;" %>
+    <% else  %>
+    <%= link_to "Add friends", friends_path, class:"btn", style:"background: #A767F5; color: #fff;" %>
+<% end %>
